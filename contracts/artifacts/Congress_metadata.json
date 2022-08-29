@@ -1,0 +1,399 @@
+{
+	"compiler": {
+		"version": "0.4.26+commit.4563c3fc"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "proposals",
+				"outputs": [
+					{
+						"name": "recipient",
+						"type": "address"
+					},
+					{
+						"name": "amount",
+						"type": "uint256"
+					},
+					{
+						"name": "description",
+						"type": "string"
+					},
+					{
+						"name": "votingDeadline",
+						"type": "uint256"
+					},
+					{
+						"name": "executed",
+						"type": "bool"
+					},
+					{
+						"name": "proposalPassed",
+						"type": "bool"
+					},
+					{
+						"name": "numberOfVotes",
+						"type": "uint256"
+					},
+					{
+						"name": "currentResult",
+						"type": "int256"
+					},
+					{
+						"name": "proposalHash",
+						"type": "bytes32"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "targetMember",
+						"type": "address"
+					}
+				],
+				"name": "removeMember",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "proposalNumber",
+						"type": "uint256"
+					},
+					{
+						"name": "transactionBytecode",
+						"type": "bytes"
+					}
+				],
+				"name": "executeProposal",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "memberId",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "numProposals",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "newAdmin",
+						"type": "address"
+					}
+				],
+				"name": "transferAdminship",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "members",
+				"outputs": [
+					{
+						"name": "member",
+						"type": "address"
+					},
+					{
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"name": "memberSince",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "debatingPeriodInMinutes",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "minimumQuorum",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "majorityMargin",
+				"outputs": [
+					{
+						"name": "",
+						"type": "int256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "beneficiary",
+						"type": "address"
+					},
+					{
+						"name": "etherAmount",
+						"type": "uint256"
+					},
+					{
+						"name": "jobDescription",
+						"type": "string"
+					},
+					{
+						"name": "transactionBytecode",
+						"type": "bytes"
+					}
+				],
+				"name": "newProposal",
+				"outputs": [
+					{
+						"name": "proposalID",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "minimumQuorumForProposal",
+						"type": "uint256"
+					},
+					{
+						"name": "minutesForDebate",
+						"type": "uint256"
+					},
+					{
+						"name": "marginOfVotesForMajority",
+						"type": "int256"
+					}
+				],
+				"name": "changeVotingRules",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "targetMember",
+						"type": "address"
+					},
+					{
+						"name": "memberName",
+						"type": "string"
+					}
+				],
+				"name": "addMember",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "proposalNumber",
+						"type": "uint256"
+					},
+					{
+						"name": "supportsProposal",
+						"type": "bool"
+					}
+				],
+				"name": "vote",
+				"outputs": [
+					{
+						"name": "voteID",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "proposalNumber",
+						"type": "uint256"
+					},
+					{
+						"name": "beneficiary",
+						"type": "address"
+					},
+					{
+						"name": "etherAmount",
+						"type": "uint256"
+					},
+					{
+						"name": "transactionBytecode",
+						"type": "bytes"
+					}
+				],
+				"name": "checkProposalCode",
+				"outputs": [
+					{
+						"name": "codeChecksOut",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "admin",
+				"outputs": [
+					{
+						"name": "",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"name": "minimumQuorumForProposal",
+						"type": "uint256"
+					},
+					{
+						"name": "minutesForDebate",
+						"type": "uint256"
+					},
+					{
+						"name": "marginOfVotesForMajority",
+						"type": "int256"
+					}
+				],
+				"payable": true,
+				"stateMutability": "payable",
+				"type": "constructor"
+			},
+			{
+				"payable": true,
+				"stateMutability": "payable",
+				"type": "fallback"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Congress.sol": "Congress"
+		},
+		"evmVersion": "byzantium",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Congress.sol": {
+			"keccak256": "0x799ac0173da9739863b89d97ad2118b989e81fbf52cea6b1127eb9bcd89aba7d",
+			"urls": [
+				"bzzr://23b2a9f6ea38d773b0d052600ae22908c63797c06f3b572292cb4e2c274251e1"
+			]
+		}
+	},
+	"version": 1
+}
